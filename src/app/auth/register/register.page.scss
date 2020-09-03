@@ -1,0 +1,33 @@
+ion-grid {
+    margin: 3rem auto;
+}
+
+ion-button{
+    --background: #CF0652;
+}
+
+a{
+    color: #fff;
+}
+
+.title {
+    margin: 2rem auto;
+}
+.title h3{
+    font-size: 3rem;
+    margin-left: 1rem;
+    text-align: left;   
+}
+
+.inputBox{
+    margin: 2rem auto;
+}
+
+.inputBox ion-item{
+    margin: 1rem auto;
+}
+
+.goRegister {
+    font-size: 0.7rem;
+    justify-content: center;
+}

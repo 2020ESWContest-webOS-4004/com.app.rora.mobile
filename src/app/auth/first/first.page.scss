@@ -1,0 +1,25 @@
+ion-content {
+    --ion-background-color: var(--ion-color-light);
+}
+
+.top_logo {
+    margin-top: 6rem;
+}
+.top_logo p{
+    text-align: center;
+    font-size: 5rem;
+    color: #CF0652;
+}
+
+.buttons {
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+}
+
+.buttons ion-button {
+    margin-bottom: 1.5rem;
+}
+
+.buttons ion-text {
+    padding-left: 2rem auto;
+}
