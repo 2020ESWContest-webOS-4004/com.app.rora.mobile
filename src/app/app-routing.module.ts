@@ -5,6 +5,11 @@ import { KakaoNaviComponent } from './kakao-navi/kakao-navi.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/tabs/tab2',
+    pathMatch: 'full'
+  },
+  {
+    path: 'first',
     loadChildren: () => import('./auth/first/first.module').then( m => m.FirstPageModule)
   },
   {

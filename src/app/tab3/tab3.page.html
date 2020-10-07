@@ -9,19 +9,35 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-list-header>
-      도난 사고
-    </ion-list-header>
-    <ion-item>
-      2020-09-01
-    </ion-item>
-  </ion-list>
-  <ion-list>
-    <ion-list-header>
       주행 사고
     </ion-list-header>
-    <ion-item>
-      2020-09-01
-    </ion-item>
   </ion-list>
-  
+    <ion-card *ngFor="let accident of trafficAccidents;">
+      <ion-card-header>
+        <ion-card-subtitle>{{accident.accidnet_time}}</ion-card-subtitle>
+        <ion-card-title>{{accident.accident_location}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>운전자 아이디 : {{accident.jarvis_member_id}}</p>
+        <p>사고 위치 : {{accident.accident_location}}</p>
+        <p>운전자 의식 여부 : {{accident.consciousness}}</p>
+        <p>차량 번호 : {{accident.car_number}}</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list>
+      <ion-list-header>
+         도난 사고
+      </ion-list-header>
+    </ion-list>
+      <ion-card *ngFor="let accident of theftAccidents;">
+        <ion-card-header>
+          <ion-card-subtitle>{{accident.accidnet_time}}</ion-card-subtitle>
+          <ion-card-title>{{accident.accident_location}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>운전자 아이디 : {{accident.jarvis_member_id}}</p>
+          <p>사고 위치 : {{accident.accident_location}}</p>
+          <p>차량 번호 : {{accident.car_number}}</p>
+        </ion-card-content>
+      </ion-card>
 </ion-content>

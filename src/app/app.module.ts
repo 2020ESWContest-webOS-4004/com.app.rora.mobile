@@ -11,6 +11,10 @@ import { AppComponent } from './app.component';
 
 import { AuthModule} from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FCM } from 'cordova-plugin-fcm-with-dependecy-updated/ionic/ngx';
+import { SMS } from '@ionic-native/sms/ngx';
+
+
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    FCM,
+    SMS
   ],
   bootstrap: [AppComponent]
 })
